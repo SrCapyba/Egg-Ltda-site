@@ -1,0 +1,106 @@
+
+html, body {
+    min-height: 100vh;
+    
+
+}
+
+body {
+    background: linear-gradient(0deg, rgb(52, 146, 189) 0%, rgb(20, 145, 167) 100%);
+    background-size: cover;
+    background-repeat: no-repeat;
+    display: flex;
+    flex-direction: column;
+}
+
+h1.title, h2.desc{
+    margin-top: 50px;
+    margin-bottom: 50px;
+    text-align: center;
+    font-family: Impact;
+    font-style: normal;
+    font-weight: normal;
+    color: white;
+}
+
+.rowtext{
+    font-family: Impact;
+    font-style: normal;
+    font-weight: normal;
+    color: white;
+}
+
+img.carro{
+    display: block;
+    margin: auto;
+    width: 200px;
+}
+
+.rowimage{
+    width: 200px;
+    margin-bottom: 20px;
+}
+
+.link{
+    
+    font-family: Impact;
+    font-style: normal;
+    font-weight: normal;
+    font-size: 40px;
+    color: rgb(255, 235, 121);
+    text-decoration: none;
+    display: block;
+    width: auto;
+    text-align: center;
+    background-color: #333333;
+}
+.link:hover{
+    color: rgb(252, 206, 0);
+    text-decoration: none;
+}
+
+.link {
+    font-family: Impact;
+    font-style: normal;
+    font-weight: normal;
+    font-size: 40px;
+    color: rgb(255, 235, 121);
+    text-decoration: none;
+    display: block;
+    width: auto;
+    text-align: center;
+    background-color: #333333;
+}
+
+/* Mobile */
+@media (max-width: 576px) {
+    .link {
+        font-size: 24px; 
+        padding: 10px 5px;
+    }
+}
+
+
+main{
+    flex: 5px;
+}
+
+footer{
+  background: #333333;
+  color: white;
+  text-align: center;
+  padding: 15px;
+  font-family: 'Franklin Gothic Medium', 'Arial Narrow', Arial, sans-serif;
+}
+
+.SobreTexto{
+    margin-top: 40px;
+    margin-bottom: 40px;
+    font-style: normal;
+    font-weight: normal;
+    font-size: 24px;
+  color: white;
+  text-align: center;
+  padding: 15px;
+  font-family: 'Franklin Gothic Medium', 'Arial Narrow', Arial, sans-serif;
+}
