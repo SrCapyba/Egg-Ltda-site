@@ -7,17 +7,15 @@
     <link rel="stylesheet" href="https://maxcdn.bootstrapcdn.com/bootstrap/3.4.1/css/bootstrap.min.css">
     <link rel = "stylesheet" href="css/style.css">
 
-    
+    <audio id="bgm" autoplay loop playsinline>
+        <source src="audio/musica.mp3" type="audio/mpeg">
+    </audio>
+
 
 </head>
 
 <body>
     <main>
-
-        <audio autoplay loop>
-            <source src="audio/musica.mp3" type="audio/mpeg">
-        </audio>
-
 
         <header>
             <nav class="navbar navbar-inverse">
@@ -57,5 +55,21 @@
             Produção e entrega de ovos frescos direto da granja para sua casa.
             CNPJ: 54.235.667/0001-05 | Endereço: Rua das Granjas, 13 – Vilasol /SB</article>
     </footer>
+
+    <script>
+        window.addEventListener("load", () => {
+        const music = document.getElementById("bgm");
+
+        music.volume = 0;       // começa mudo
+        music.play().then(() => {
+            setTimeout(() => {
+            music.volume = 1;   // depois habilita o volume
+            }, 1000);             // 1 segundo após tocar
+        }).catch(() => {
+            console.log("Autoplay bloqueado.");
+        });
+        });
+    </script>
+
 </body>
 </html>
