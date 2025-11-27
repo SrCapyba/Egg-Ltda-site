@@ -1,0 +1,76 @@
+<!DOCTYPE html>
+<html lang="pt-br">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Egg Ltda 🥚</title>
+    <link rel="stylesheet" href="https://maxcdn.bootstrapcdn.com/bootstrap/3.4.1/css/bootstrap.min.css">
+    <link rel = "stylesheet" href="css/style.css">
+
+</head>
+
+<body>
+    <main>
+
+        <header>
+            <nav class="navbar navbar-inverse">
+                <div class="container-fluid">
+                  <div class="navbar-header">
+                    <a class="navbar-brand" href="index.html">Carro do Ovo</a>
+                  </div>
+                    <ul class="nav navbar-nav">
+                        <li><a href="index.html">Home</a></li>
+                        <li class="active"><a href="pedidos.html">Pedidos</a></li>
+                        <li><a href="sobre.html">Sobre</a></li>
+                    </ul>
+                </div>
+            </nav>
+
+        </header>
+
+        <h1 class = "title">Prencha o formulario para realizar o pedido</h1>
+
+        <form class="pedido-form">
+            <label for="nome">Nome completo</label>
+            <input type="text" id="nome" name="firstname" placeholder="Seu nome...">
+
+            <label for="email">Email</label>
+            <input type="email" id="email" name="email" placeholder="Seu email...">
+
+            <label for="contato">Telefone</label>
+            <input type="tel" id="telefone" name="telefone" placeholder="DDD + Número...">   
+
+            <label for="endereço">Endereço</label>
+            <input type="text" id="endereço" name="email" placeholder="Cidade/Bairro/Rua/Numero...">
+
+            <label>Escolha seu pedido:</label>
+            <div class="linha-ovo">
+                <select id="Ovo" name="Ovo">
+                    <option value="galinha">Branco</option>
+                    <option value="galinha2">Marrom</option>
+                    <option value="Chocolate">Chocolate</option>
+                    <option value="Dragão">Dragão</option>
+                </select>
+
+                <select id="tipo" name="Tipo">
+                    <option value="normal">Normal</option>
+                    <option value="raro">Raro</option>
+                    <option value="epecial">Especial</option>
+                </select>
+
+                <input type="number" id="qtd" name="quantidade" placeholder="Qtd." min="1">
+            </div>
+            
+            <input type="submit" value="Enviar Pedido">
+        </form>
+        
+        
+    </main>
+
+    <footer>
+        <article>Egg Ltda. © 2025 — Todos os direitos reservados.
+            Produção e entrega de ovos frescos direto da granja para sua casa.
+            CNPJ: 54.235.667/0001-05 | Endereço: Rua das Granjas, 13 – Vilasol /SB</article>
+    </footer>
+</body>
+</html>
